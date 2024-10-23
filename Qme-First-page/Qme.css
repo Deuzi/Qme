@@ -2,3 +2,62 @@
     padding: 0;
     margin: 0;
 }
+/* font-family: "IBM Plex Mono",
+monospace; */
+
+/* font-family: "Cherry Bomb One",
+system-ui; */
+body{
+    font-family: "Bree Serif", serif;
+}
+
+#intro{
+    padding: 1.5rem 1rem;
+    background: linear-gradient(to top, rgba(19, 14, 19, 1), rgba(0, 0, 0, 0)),
+            url('img/mainSec.jpg');;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30%;
+    color: #ffff;
+    
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+
+        h1{
+            font-family: "Cherry Bomb One", serif;
+            font-size: 2rem;
+        }
+    }
+    nav{
+        #menu{
+            cursor: pointer;
+        }
+        ul{
+            list-style: none;
+            display: none;
+        }
+        li{
+            padding-right: 1rem ;
+        }
+    }
+
+
+    #hero-section{
+        text-align: center;
+        margin-top: 2rem;
+
+        #category-ref{
+            font-family: "Bree Serif", serif;;
+            background-color: black;
+            padding: 0.5rem 1.5rem;
+            margin-top: 1rem;
+            color: #ffff;
+            border-radius: 10px;
+            border: 1px solid #130e13cc;
+            cursor: pointer;
+        }
+    }
+
+}
