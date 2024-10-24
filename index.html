@@ -16,15 +16,22 @@
         <section id="intro">
             <header>
                 <h1 id="logo-name">Qme</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffff" id="menu">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
                 <nav id="nav-bar">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffff" id="menu">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                    </svg>
                     <ul id="menu-list">
                         <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffff" id="nav-collapse">
                             <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg>
-                        <li>Categories</li>
+                        <li id="categories">Categories <img src="imgs/add.png" alt="addButton" id="cat-dropdown">
+                            <ul id="sub-cat"> 
+                                <li class="sub-list"><img src="imgs/Extinct/mammoth 2.webp" alt="extinct animals" class="mini-img">Extinct Animals</li>
+                                <li class="sub-list"><img src="imgs/arch-6356637_1280.jpg" alt="PARIS" class="mini-img">Cities</li>
+                                <li class="sub-list"><img src="imgs/mentor-2494673_1280.jpg" alt="A CEO" class="mini-img">CEO's</li>
+                                <li class="sub-list"><img src="imgs/NormalAnimals/kittens.jpg" alt="kitten"  class="mini-img">Animals</li>
+                            </ul>
+                        </li>
                         <li>Socials</li>
                         <li>FAQ</li>
                     </ul>
@@ -33,7 +40,7 @@
             
             <section id="hero-section">
                 <div id="brief-info">
-                    <p> test you knowledge today by answer different <br> question in difference categories</p>
+                    <p> test you knowledge today by answering different <br> question in difference categories</p>
                     <button id="category-ref">Try it</button>
                 </div>
             </section>           

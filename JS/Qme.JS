@@ -2,10 +2,10 @@
 const menuBtn = document.getElementById('menu');
 
 menuBtn.addEventListener('click', () => {
-  let menuList = document.getElementById('menu-list');
+  let menuList = document.getElementById('nav-bar');
 
+  menuList.style.position = 'fixed';
   menuList.style.display = 'flex';
-  menuList.style.transition = '10s';
   console.log('menuListDisplay:', menuList);
 
   //Menu Collapse
@@ -15,4 +15,13 @@ menuBtn.addEventListener('click', () => {
   closeBtn.addEventListener('click', () => {
     menuList.style = '.hidden';
   });
+});
+
+//SUB CATEGROIES DISPLAY
+
+const categories = document.getElementById('categories');
+
+categories.addEventListener('click', () => {
+  const subCategory = document.getElementById('sub-cat');
+  subCategory.style.display = 'contents';
 });
