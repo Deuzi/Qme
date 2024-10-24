@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 /* font-family: "IBM Plex Mono",
 monospace; */
@@ -18,67 +19,131 @@ body{
 }
 #intro{
     padding: 1.5rem 1rem;
-    background: linear-gradient(to top, rgba(19, 14, 19, 1), rgba(0, 0, 0, 0)),
-            url('img/mainSec.jpg');;
+    background: linear-gradient(to top, rgb(0, 95, 105, 1), rgba(0, 0, 0, 0)), url('/imgs/hero/mainSEC2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30%;
+    height: 30vh;
     color: #ffff;
+}
     
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+header h1{
+    font-family: "Cherry Bomb One", serif;
+    font-size: 2rem;
+}
     
-    header{
-        display: flex;
-        justify-content: space-between;
+nav #menu{
+    cursor: pointer;
+    background-color: #00E6D4;
+    border-radius: 4px;
+    padding: 0.2rem;
+}
 
-        h1{
-            font-family: "Cherry Bomb One", serif;
-            font-size: 2rem;
-        }
+nav ul{
+    position: absolute;
+    background-color: #ffff;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 10;
+    color: #000000;
+    padding: 1rem 2rem 1rem 0.5rem;
+}
+
+/* collapse button */
+
+ul #nav-collapse{
+    margin-right: 5rem;
+    cursor: pointer;
+    background-color: #00E6D4;
+    border-radius: 4px;
+    padding: 0.2rem;
+}
+
+
+ul li{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+
+#hero-section{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#brief-info p {
+    position: relative;
+
+    animation: slide 5s ease-in 1 ;
+}
+
+@keyframes slide {
+    0%{
+        left: 400px;
     }
-    
-    nav{
-        #menu{
-            cursor: pointer;
-        }
-        ul{
-            position: absolute;
-            background-color: #ffff;
-            list-style: none;
-            display: none;
-            flex-direction: column;
-            top: 0;
-            right: 0px;
-            height: 100vh;
-            color: #000000;
-            padding: 1rem 2rem 1rem 0.5rem;
-
-            /* collapse button */
-            #nav-collapse {
-                margin-right: 5rem;
-                cursor: pointer;
-            }
-        }
-        li{
-            margin-top: 1rem;
-            margin-left: 2rem;
-        }
+    25% {
+        left: -100px;
+    }
+    50% {
+        left: -50px
+    }
+    75% {
+        left: -40px;
+    }
+    85%  {
+        left: -20px;
     }
 
-
-    #hero-section{
-        text-align: center;
-        margin-top: 2rem;
-
-        #category-ref{
-            font-family: "Bree Serif", serif;;
-            background-color: black;
-            padding: 0.5rem 1.5rem;
-            margin-top: 1rem;
-            color: #ffff;
-            border-radius: 10px;
-            border: 1px solid #130e13cc;
-            cursor: pointer;
-        }
+    90%{
+        left: -10px;
     }
 
+    95% {
+        left: -5px ;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+#category-ref{
+    font-family: "Bree Serif", serif;;
+    background-color: #00E6D4;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    color: #ffff;
+    border-radius: 9px;
+    border: 0 solid #005F69;
+    cursor: pointer;
+
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+#category-ref:hover{
+    animation-play-state: paused;
+}
+
+@keyframes blink {
+    0%{
+    }
+
+    50% {
+        font-size: 1.05rem;
+    }
+
+    100% {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
 }

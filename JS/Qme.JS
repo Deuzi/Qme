@@ -5,7 +5,7 @@ menuBtn.addEventListener('click', () => {
   let menuList = document.getElementById('menu-list');
 
   menuList.style.display = 'flex';
-
+  menuList.style.transition = '10s';
   console.log('menuListDisplay:', menuList);
 
   //Menu Collapse
