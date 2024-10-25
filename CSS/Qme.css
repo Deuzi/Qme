@@ -44,7 +44,7 @@ header h1{
 }
 
 #nav-bar{
-    background-color: #ffff;
+    background-color: #00DECE;
     list-style: none;
     top: 0;
     right: 0;
@@ -63,7 +63,7 @@ nav ul{
 /* collapse button */
 
 ul #nav-collapse{
-    margin-right: 7rem;
+    margin-right: 2rem;
     cursor: pointer;
     background-color: #00E6D4;
     border-radius: 4px;
@@ -73,7 +73,7 @@ ul #nav-collapse{
 
 ul li{
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     text-align: center;
 }
 
@@ -84,10 +84,16 @@ ul .mini-img{
     height: 30px;
     border-radius: 10px;
 }
-#sub-cat {
+.sub {
     display: none;
 }
-#sub-cat .sub-list{
+
+/* utility */
+
+.visible-sub{
+    display: contents;
+}
+.sub .sub-list{
     background: linear-gradient(to right, rgb(0, 95, 105, 1),  rgb(0, 230, 212, 0.6));
     text-align: center;
     padding: 0.7rem ;
@@ -98,7 +104,23 @@ ul .mini-img{
     margin-right: 0.5rem;
 }
 
-#categories #cat-dropdown{
+#menu-list .cat-dropdown{
+    height: 20px;
+    width: 20px;
+    color: #005F69;
+    cursor: pointer;
+}
+
+#menu-list .remove-btn{
+    height: 20px;
+    width: 20px;
+    color: #005F69;
+    cursor: pointer;
+    display: none;
+}
+
+/* utility */
+.visibility{
     height: 20px;
     width: 20px;
     color: #005F69;

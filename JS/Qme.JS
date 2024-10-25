@@ -19,9 +19,41 @@ menuBtn.addEventListener('click', () => {
 
 //SUB CATEGROIES DISPLAY
 
-const categories = document.getElementById('categories');
+const addSign = document.querySelectorAll('.cat-dropdown');
+addSign.forEach((display) => {
+  display.addEventListener('click', (event) => {
+    const listItem = event.target.closest('li');
 
-categories.addEventListener('click', () => {
-  const subCategory = document.getElementById('sub-cat');
-  subCategory.style.display = 'contents';
+    display.classList.add('hidden');
+    let catergorySub = listItem.querySelectorAll('.sub');
+    catergorySub.forEach((sub) => {
+      sub.classList.add('visible-sub');
+
+      let removeSign = listItem.querySelectorAll('.remove-btn');
+      removeSign.forEach((sign) => {
+        sign.classList.replace('remove-btn', 'visibility');
+
+        sign.addEventListener('click', () => {
+          sign.classList.replace('visibility', 'remove-btn');
+          console.log('signConvert:', sign);
+
+          sub.classList.toggle('visible-sub');
+          console.log('subWhenToggled:', sub);
+
+          display.classList.remove('hidden');
+          console.log('display:', display);
+        });
+      });
+    });
+  });
 });
+
+// if (display === 'click') {
+
+//   let removeSign = document.querySelectorAll('.remove-btn');
+//   removeSign.forEach((remove) => {
+//     remove.addEventListener('click', () => {
+//       sub.classList.remove('visibile-sub');
+//     });
+//   });
+// }
