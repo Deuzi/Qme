@@ -35,13 +35,10 @@ addSign.forEach((display) => {
 
         sign.addEventListener('click', () => {
           sign.classList.replace('visibility', 'remove-btn');
-          console.log('signConvert:', sign);
 
-          sub.classList.toggle('visible-sub');
-          console.log('subWhenToggled:', sub);
-
+          sub.classList.remove('visible-sub');
+          console.log('classOfSub:', sub);
           display.classList.remove('hidden');
-          console.log('display:', display);
         });
       });
     });

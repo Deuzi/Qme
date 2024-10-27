@@ -179,7 +179,7 @@ ul .mini-img{
     border-radius: 9px;
     border: 0 solid #005F69;
     cursor: pointer;
-
+    
     animation-name: blink;
     animation-iteration-count: infinite;
     animation-duration: 3s;
@@ -202,4 +202,36 @@ ul .mini-img{
         font-size: 1rem;
         padding: 0.5rem 1.5rem;
     }
+}
+
+/* BIG Screens */
+
+@media (min-width: 740px){
+    #nav-bar{    
+        height: max-content;
+        z-index: 0;
+        display: flex;
+        background: none;
+        justify-content: cente;
+        padding: 0;
+    }
+
+    #menu {
+        display: none;
+    }
+    ul #nav-collapse {
+        display: none;
+    }
+    nav ul {
+        flex-direction: row;
+    
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1280px) {
+    
 }
