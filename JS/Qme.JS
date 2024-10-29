@@ -44,13 +44,3 @@ addSign.forEach((display) => {
     });
   });
 });
-
-// if (display === 'click') {
-
-//   let removeSign = document.querySelectorAll('.remove-btn');
-//   removeSign.forEach((remove) => {
-//     remove.addEventListener('click', () => {
-//       sub.classList.remove('visibile-sub');
-//     });
-//   });
-// }

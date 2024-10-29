@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+   
 }
 /* font-family: "IBM Plex Mono",
 monospace; */
@@ -57,7 +57,6 @@ header h1{
 
 nav ul{
     flex-direction: column;
-
 }
 
 /* collapse button */
@@ -204,9 +203,62 @@ ul .mini-img{
     }
 }
 
+
+
+/* CATEGORIES SECTION */
+#quiz-section{
+    padding: 1.5rem 1.2rem;
+}
+#quiz-container{
+
+}
+
+figure img{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+figure {
+    display: flex;
+    margin: 0.5rem 0;
+    background-color: #00E6D4;
+    padding: 1.5rem 1.1rem;
+    border-radius: 10px;
+}
+
+figcaption{
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* BIG Screens */
 
 @media (min-width: 740px){
+    body{
+        font-size: 20px;
+    }
+    /* LOGO */
+    header h1 {
+        font-size: 2.5rem;
+    }
+
     #nav-bar{    
         height: max-content;
         z-index: 0;
@@ -223,15 +275,66 @@ ul .mini-img{
         display: none;
     }
     nav ul {
+        display: flex;
         flex-direction: row;
-    
     }
+   
+    /* HEADER */
+    #intro{
+        padding: 2rem 3rem;
+        height: 32vh;
+    }
+
+    #hero-section{
+        margin-top: 3rem;
+        z-index: 0;
+    }
+
+    /* Try it Button */
+
+    #category-ref{
+        margin-top: 1.1rem;
+    }
+
+    /* SUB of different page directories */
+
+    /* HEADER */
+    
+    
 }
 
 @media (min-width: 1024px) {
+    body{
+        font-size: 22px;
+    }
+    #intro {
+        padding: 2rem 4rem;
+        height: 35vh;
+    }
+    header h1 {
+        font-size: 2.7rem;
+    }
     
 }
 
 @media (min-width: 1280px) {
+    body{
+        font-size: 25px;
+    }
+
+    #intro {
+        padding: 2rem 4.5rem;
+        height: 40vh;
+    }
+    
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    /* BTN */
+
+    #categort-ref{
+        font-size: 1.1rem;
+    }
     
 }
