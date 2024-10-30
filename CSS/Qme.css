@@ -10,7 +10,8 @@ monospace; */
 /* font-family: "Cherry Bomb One",
 system-ui; */
 body{
-    font-family: "Bree Serif", serif;
+    font-family: "Outfit", sans-serif;
+    color: #ffff;
 }
 /* Utitlity CSS */
 
@@ -141,36 +142,17 @@ ul .mini-img{
 
 
 @keyframes slide {
-    0%{
-        left: 400px;
-    }
-    25% {
-        left: -100px;
-    }
-    50% {
-        left: -50px
-    }
-    75% {
-        left: -40px;
-    }
-    85%  {
-        left: -20px;
-    }
+  0%{
+    transform: translateX(-25%);
+  }
 
-    90%{
-        left: -10px;
-    }
-
-    95% {
-        left: -5px ;
-    }
-    100%{
-        right: 0;
-    }
+  100%{
+    transform: translateX(25%);
+  }
 }
 
 #category-ref{
-    font-family: "Bree Serif", serif;;
+    font-family: "Outfit", sans-serif;
     background-color: #00E6D4;
     padding: 0.5rem 1.5rem;
     margin-top: 1rem;
@@ -208,10 +190,11 @@ ul .mini-img{
 /* CATEGORIES SECTION */
 #quiz-section{
     padding: 1.5rem 1.2rem;
+    background-color: #005F69;
 }
-#quiz-container{
+/* #quiz-container{
 
-}
+} */
 
 figure img{
     height: 50px;
@@ -224,10 +207,43 @@ figure {
     background-color: #00E6D4;
     padding: 1.5rem 1.1rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 figcaption{
     margin-left: 1rem;
+}
+
+figcaption:hover{
+    color: #005F69;
+    font: 1.1rem;
+}
+
+/* HIGHLIGHT SECTION */
+
+#section-highlight{
+    position: relative;
+    font-size: 0.81rem;
+    color: #00DECE;
+    width: 100%;
+    margin-bottom: 1.1rem;
+    
+
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+
 }
 
 
