@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-   
 }
 /* font-family: "IBM Plex Mono",
 monospace; */
@@ -190,11 +189,8 @@ ul .mini-img{
 /* CATEGORIES SECTION */
 #quiz-section{
     padding: 1.5rem 1.2rem;
-    background-color: #005F69;
+    background: #44b6ae;
 }
-/* #quiz-container{
-
-} */
 
 figure img{
     height: 50px;
@@ -224,7 +220,7 @@ figcaption:hover{
 #section-highlight{
     position: relative;
     font-size: 0.81rem;
-    color: #00DECE;
+    color: #ffff;
     width: 100%;
     margin-bottom: 1.1rem;
     
@@ -247,6 +243,60 @@ figcaption:hover{
 }
 
 
+/* z-index section */
+#stack{
+    background: #277c77;
+    padding: 2rem 1.2rem;
+}
+.topics{
+    display: block;
+    margin: 0 auto;
+}
+#stack article{
+    background-color: #00E6D4;
+    margin-bottom: 0.7rem;
+    word-wrap: break-word;
+    width: fit-content;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: #277c77 3px 3px;
+}
+
+#article-1{
+    padding: 0.9rem 0.8rem;
+    position: relative;
+    margin-left: 3rem;
+    z-index: 1;
+    transition: all 2s;
+}
+
+#article-2{
+    position: relative;
+    top: -60px;
+    margin-right: 3rem;
+    padding: 1rem;
+    z-index: 2;
+    transition: all 2s;
+
+}
+
+#article-1:hover{
+    z-index: 3;
+    transform: scale(1); 
+}
+#article-2:hover{
+    transform: scale(1);
+}
+
+
+
+
+/* footer */
+#copy-right{
+    background-color: #005F69;
+    text-align: center;
+    padding: 1.5rem 0;
+}
 
 
 
@@ -265,8 +315,21 @@ figcaption:hover{
 
 
 /* BIG Screens */
+@media (min-width:500px) {
+    /* HIGHLIGHT SECTION */
+    #quiz-container .quiz-items {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.7rem;
+    }
 
-@media (min-width: 740px){
+    #section-highlight {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 680px){
     body{
         font-size: 20px;
     }
@@ -315,7 +378,9 @@ figcaption:hover{
     /* SUB of different page directories */
 
     /* HEADER */
-    
+
+
+   
     
 }
 
@@ -329,6 +394,18 @@ figcaption:hover{
     }
     header h1 {
         font-size: 2.7rem;
+    }
+
+
+    /* Quiz-category */
+    #quiz-container .quiz-items {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #section-highlight {
+        font-size: 1.7rem;
     }
     
 }
