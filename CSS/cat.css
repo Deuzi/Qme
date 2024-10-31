@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+:root{
+    --main-bg: #005F69;
+    --btn-colors: #00E6D4;
+}
+
+
+
+body{
+    background-color: var(--main-bg);
+    color: #ffff;
+}
+
+
+#quiz{
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.7rem;
+    display: block;
+   
+}
+
+#quiz-section{
+    width: 300px;
+    background-color: var(--btn-colors);
+    margin: 0 auto;
+}
