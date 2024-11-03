@@ -9,11 +9,27 @@
 </head>
 <body>
     <main id="quiz">
+        <h1>Qme</h1>
         <section id="quiz-section">
-            <div id="question">Loading quiz ................</div>
-            <div class="options">
+            <section id="quiz-header">
+                <h2>Quiz about animals</h2>            
+                <div id="progress"> Question <span id="current-question">1</span> of <span id="total-question">7</span></div>
+            </section>
 
-            </div>
+            <section id="quiz-content">
+                <div class ="question" id="question-text"></div>
+                <div class="options" id="options-container">
+                </div>
+                <button class="next-btn" id="next-btn"> Next</button>
+            </section>
+
+            <section class="score-container" id="score-container">
+                <h2>Quiz completed</h2>
+                <div class="score"> score: <span id="score">0</span><span id="total-score">0</span></div>
+                <button class="restart-btn" id="restart-btn">Restart Quiz</button>
+                <button class="next-section" id="next-section">Next Section</button>
+            </section>
+
         </section>
     </main>
     
