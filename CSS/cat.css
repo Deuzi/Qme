@@ -17,8 +17,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Outfit", sans-serif;
 }
 
+h1{
+    font-family: "Cherry Bomb One", serif;
+}
+
+.option.correct {
+    background-color: rgb(16, 212, 131);
+    border-color: #005F69;
+}
+
+.option.wrong {
+    background-color: #c93642;
+    border-color: #c93642;
+}
 
 #quiz{  
     text-align: center;
@@ -26,23 +40,73 @@ body{
     padding: 0.7rem;
 }
 
+#question-text{
+    margin-top: 1.2rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.option{
+    padding:0.5rem 0;
+    background-color: #1f747e;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#options-container{
+    margin: 1rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+    
+}
+
 #quiz-section{
     padding-top: 1rem;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
     background-color: var(--btn-colors);
     border-radius: 10px;
 }
 
-.next-btn{
+#next-btn{
     padding: 0.5rem 0.75rem;
     border-radius: 5px;
     background-color: #005F69;
     border: 0 solid #005F69;
     color: #ffff;
-    display: none;
+    cursor: pointer;
+    /* display: none; */
 }
 
+.hidden{
+    display: none;
+}
+#previous-btn{
+    display: none;
+    margin-right:  0.5rem;
+} 
+button{
+    margin-top: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    background-color: #005F69;
+    border: 0 solid #005F69;
+    color: #ffff;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+}
+
+#quiz-btn{
+    display: flex;
+    justify-content: center ;
+
+}
+
+.score{
+    margin-top: 0.7rem;
+}
 .score-container{
     text-align: center;
     display: none;

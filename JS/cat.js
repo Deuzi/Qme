@@ -1,38 +1,38 @@
 const questions = [
   {
-    question: 'which animal is the tallest in the animal kingdom',
+    question: 'which animal is the tallest in the animal kingdom?',
     options: ['cat', 'giraffe', 'jaguar', 'tiger'],
-    correct: 'giraffe',
+    correct: 1,
   },
   {
     question: ' the fastest animal on land is ?',
     options: ['lion', 'parrot', 'elephant', 'cheetah'],
-    correct: 'cheetah',
+    correct: 3,
   },
   {
-    question: 'which animal is the king of the jungle',
+    question: 'which animal is the king of the jungle?',
     options: ['monkey', 'deer', 'gorilla', 'lion'],
-    correct: 'lion',
+    correct: 3,
   },
   {
     question: 'What is the largest mammal in the world?',
-    options: ['Elephant, Blue Whale, Giraffe, Hippopotamus'],
-    correct: 'Blue Whale',
+    options: ['Elephant', 'Blue Whale', 'Giraffe', 'Hippopotamus'],
+    correct: 1,
   },
   {
-    question: 'Which animal is known as the “Ship of the Desert”',
+    question: 'Which animal is known as the “Ship of the Desert”?',
     options: ['Elephant', 'Camel', 'Horse', 'donkey'],
-    correct: 'Camel',
+    correct: 1,
   },
   {
     question: ' Which bird is known for its ability to mimic human speech?',
     options: ['Sparrow', 'Parrot', 'Owl', 'Eagle'],
-    correct: 'parrot',
+    correct: 1,
   },
   {
     question: 'Which animal is known to have the longest lifespan?',
     options: ['Elephant', 'Blue Whale', 'Giant Tortoise', 'Polar Bear'],
-    correct: 'Polar Bear',
+    correct: 3,
   },
 ];
 
@@ -52,10 +52,11 @@ const scoreContainer = document.getElementById('score-container');
 const scoreSpan = document.getElementById('score');
 const totalScoreSpan = document.getElementById('total-score');
 const restartBtn = document.getElementById('restart-btn');
+const prevBtn = document.getElementById('previous-btn');
 
 function loadQuestion() {
   answered = false;
-  nextBtn.style.display = 'none';
+  // nextBtn.style.display = 'none';
 
   const question = questions[currentQuestion];
 
@@ -89,5 +90,44 @@ function checkAnswer(selectedIndex) {
     options[question.correct].classList.add('correct');
   }
 
-  nextBtn.style.display = 'block';
+  nextBtn.style.display = 'flex';
 }
+
+function showScore() {
+  quizContent.style.display = 'none';
+  scoreContainer.style.display = 'block';
+  scoreSpan.textContent = score;
+  totalScoreSpan.textContent = questions.length;
+}
+
+function restartQuiz() {
+  currentQuestion = 0;
+  score = 0;
+  quizContent.style.display = 'block';
+  scoreContainer.style.display = 'none';
+
+  loadQuestion();
+}
+
+nextBtn.addEventListener('click', () => {
+  currentQuestion++;
+  prevBtn.style.display = 'flex';
+
+  if (currentQuestion < questions.length) {
+    loadQuestion();
+  } else {
+    showScore();
+  }
+});
+
+// prevBtn.addEventListener('click', () => {
+//   if (currentQuestion > 1) {
+//     currentQuestion--;
+//   }
+
+//   console.log('prevBtnClicked:', prevBtn);
+// });
+
+restartBtn.addEventListener('click', restartQuiz);
+
+loadQuestion();
