@@ -55,9 +55,9 @@ h1{
     
 }
 
-.option:hover{
-    background-color: #22a59a;
-}
+/* .option:hover{
+    background-color: #;
+} */
 
 #options-container{
     margin: 1rem;
