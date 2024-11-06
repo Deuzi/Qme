@@ -111,7 +111,8 @@ function restartQuiz() {
 
 nextBtn.addEventListener('click', () => {
   currentQuestion++;
-  prevBtn.style.display = 'flex';
+
+  prevBtn.style.opacity = '1';
 
   if (currentQuestion < questions.length) {
     loadQuestion();
@@ -120,13 +121,12 @@ nextBtn.addEventListener('click', () => {
   }
 });
 
-// prevBtn.addEventListener('click', () => {
-//   if (currentQuestion > 1) {
-//     currentQuestion--;
-//   }
-
-//   console.log('prevBtnClicked:', prevBtn);
-// });
+prevBtn.addEventListener('click', () => {
+  if (currentQuestion > 0) {
+    currentQuestion--;
+    loadQuestion();
+  }
+});
 
 restartBtn.addEventListener('click', restartQuiz);
 

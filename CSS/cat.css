@@ -14,14 +14,14 @@
 body{
     background-color: var(--main-bg);
     color: #ffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: "Outfit", sans-serif;
 }
 
 h1{
     font-family: "Cherry Bomb One", serif;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
 }
 
 .option.correct {
@@ -35,13 +35,14 @@ h1{
 }
 
 #quiz{  
+    display: block;
     text-align: center;
     border-radius: 5px;
     padding: 0.7rem;
 }
 
 #question-text{
-    margin-top: 1.2rem;
+    margin: 1.2rem 0.4rem;
     font-size: large;
     font-weight: bold;
 }
@@ -51,23 +52,28 @@ h1{
     background-color: #1f747e;
     border-radius: 7px;
     cursor: pointer;
+    
+}
+
+.option:hover{
+    background-color: #22a59a;
 }
 
 #options-container{
-    margin: 1rem 3rem;
+    margin: 1rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 10px;
-    
-    
+    gap: 10px;    
 }
 
 #quiz-section{
     padding-top: 1rem;
-    width: 400px;
+    max-width: 90%;
     height: 350px;
     background-color: var(--btn-colors);
     border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
 #next-btn{
@@ -77,15 +83,21 @@ h1{
     border: 0 solid #005F69;
     color: #ffff;
     cursor: pointer;
+
     /* display: none; */
+}
+
+#next-btn:hover{
+    background-color: #22a59a;
 }
 
 .hidden{
     display: none;
 }
 #previous-btn{
-    display: none;
+    display: flex;
     margin-right:  0.5rem;
+    opacity: 0.5;
 } 
 button{
     margin-top: 1rem;
@@ -110,4 +122,20 @@ button{
 .score-container{
     text-align: center;
     display: none;
+}
+
+
+
+/* different screen */
+
+@media (min-width: 680px){
+
+}
+
+@media(min-width: 1024px){
+
+}
+
+@media(min-width: 1280px){
+
 }
