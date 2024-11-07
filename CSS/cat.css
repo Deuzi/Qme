@@ -96,7 +96,7 @@ h1{
 }
 #previous-btn{
     display: flex;
-    margin-right:  0.5rem;
+    margin-right:  0.7rem;
     opacity: 0.5;
 } 
 button{
@@ -128,8 +128,78 @@ button{
 
 /* different screen */
 
+@media(min-width: 500px){
+    body{
+        font-size: 18px;
+    }
+    #quiz-section{
+        height: 450px;
+    }
+    #quiz-header h2 {
+        font-size: 1.9rem;
+    }
+    
+    #quiz-header #progress {
+        margin-top: 0.55rem;
+        font-size: 1.6rem;
+    }
+
+    #quiz-content {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #question-text {
+        font-size: 1.7rem;
+    }
+    .option {
+        padding: 0.7rem 0;
+    
+    }
+    button{
+        padding: 1.1rem 1.5rem;
+    }
+
+    .options,
+    #previous-btn,
+    #next-btn {
+        font-size: 1.5rem;
+    }
+}
+
 @media (min-width: 680px){
 
+    body{
+        font-size: 20px;
+    }
+
+    #question-text {
+        font-size: 2rem;
+    }
+
+    #quiz-section {
+        padding-top: 1rem;
+        max-width: 50%;
+        height: 550px;
+    }
+
+
+    .options , #previous-btn, #next-btn{
+        font-size: 1.7rem;
+    }
+
+    #quiz-content {
+        padding: 0 1rem;
+    }
+
+    #quiz-header h2{
+        margin-top: 1.5rem;
+        font-size: 2.5rem;
+    }
+    #quiz-header #progress{
+        margin-top: 1.1rem;
+        font-size: 1.6rem;
+    }
 }
 
 @media(min-width: 1024px){
