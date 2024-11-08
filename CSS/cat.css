@@ -16,7 +16,10 @@ body{
     color: #ffff;
     font-family: "Outfit", sans-serif;
 }
-
+a {
+    text-decoration: none;
+    color: #ffff;
+}
 h1{
     font-family: "Cherry Bomb One", serif;
     font-size: 3rem;
