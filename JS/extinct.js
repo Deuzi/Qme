@@ -1,47 +1,37 @@
 const questions = [
   {
-    question:
-      'The dodo bird, a famously extinct animal, was native to which island?',
-    options: ['Hawaii', 'Madagascar', 'Mauritius', 'New Zealand'],
-    correct: 2,
-  },
-  {
-    question:
-      'What was the approximate size of the largest known dinosaur, Argentinosaurus?',
-    options: ['10 meters', '20 meters', '30 meters', '40 meters'],
-    correct: 3,
-  },
-  {
-    question: 'The woolly mammoth is closely related to which living animal?',
-    options: ['African elephant', 'Hippopotamus', ' Rhino', 'Horse'],
+    question: 'What animal is called the "Tasmanian Tiger"?',
+    options: ['Thylacine', 'Moa', 'Dodo', 'Mammoth'],
     correct: 0,
   },
   {
-    question:
-      'Which of these extinct animals was discovered through fossilized remains and had large tusks and a long, curved spine?',
-    options: [
-      ' Saber-toothed tiger',
-      ' Woolly rhinoceros',
-      'Mastodon',
-      ' Megalodon',
-    ],
+    question: 'Which bird from Mauritius is extinct?',
+    options: ['Dodo', 'Great Auk', 'Moa', 'Pigeon'],
+    correct: 0,
+  },
+  {
+    question: 'Which giant elephant-like animal went extinct?',
+    options: ['Glyptodon', 'Mammoth', 'Thylacine', 'Moa'],
+    correct: 1,
+  },
+  {
+    question: 'Where was the Quagga found?',
+    options: ['Europe', ' America', 'Asia', 'Africa'],
+    correct: 3,
+  },
+  {
+    question: 'What was the largest flightless bird?',
+    options: ['Auk', 'Pigeon', 'Moa', 'Dodo'],
     correct: 2,
   },
   {
-    question:
-      'The Moa, a large flightless bird that went extinct around the 15th century, was native to which country?',
-    options: ['Australia', ' New Zealand', 'Japan', 'South Africa'],
+    question: 'Where did Stellar’s Sea Cow live?',
+    options: ['Atlantic', 'Pacific', 'Indian', 'Arctic'],
     correct: 1,
   },
   {
-    question: 'The Tasmanian tiger, or thylacine, was native to which country?',
-    options: ['Brazil', 'Australia', ' India', 'Egypt'],
-    correct: 1,
-  },
-  {
-    question:
-      'The Irish Elk, now extinct, was known for its impressive feature. What was it?',
-    options: ['Antlers', 'Speed', 'Coat', 'Tusks'],
+    question: 'What Ice Age predator had long teeth?',
+    options: ['Saber-tooth', 'Dire Wolf', 'Thylacine', 'Glyptodon'],
     correct: 0,
   },
 ];
