@@ -44,6 +44,10 @@ h1{
     padding: 0.7rem;
 }
 
+#quiz-content{
+    padding: 0 1.1rem;
+}
+
 #question-text{
     margin: 1.2rem 0.4rem;
     font-size: large;
@@ -115,7 +119,11 @@ button{
 
 #quiz-btn{
     display: flex;
-    justify-content: center ;
+    justify-content: center;
+}
+
+#quiz-btn button{
+    margin-top: 0.5rem;
 
 }
 

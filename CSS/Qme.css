@@ -24,6 +24,7 @@ body{
     background-size: cover;
     height: 30vh;
     color: #ffff;
+    overflow-y: hidden;
 }
     
 header{
@@ -62,6 +63,10 @@ a{
 
 nav ul{
     flex-direction: column;
+}
+
+#FAQ a{
+    color: #005F69;
 }
 
 /* collapse button */
@@ -106,6 +111,9 @@ ul .mini-img{
 }
 .sub-list img{
     margin-right: 0.5rem;
+}
+.sub-list box-icon{
+    overflow-y: hidden;
 }
 
 #menu-list .cat-dropdown{
@@ -158,19 +166,20 @@ ul .mini-img{
 #category-ref{
     font-family: "Outfit", sans-serif;
     background-color: #00E6D4;
-    padding: 0.5rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     margin-top: 1rem;
     color: #ffff;
     border-radius: 9px;
+    font-size: 1rem;
     border: 0 solid #005F69;
     cursor: pointer;
     
-    animation-name: blink;
+    /* animation-name: blink;
     animation-iteration-count: infinite;
     animation-duration: 3s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-out; */
 }
-
+/* 
 #category-ref:hover{
     animation-play-state: paused;
 }
@@ -187,7 +196,7 @@ ul .mini-img{
         font-size: 1rem;
         padding: 0.5rem 1.5rem;
     }
-}
+} */
 
 
 
@@ -316,7 +325,7 @@ figcaption:hover{
     }
 
     #section-highlight {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 

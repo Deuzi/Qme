@@ -106,7 +106,7 @@ function showScore() {
   quizContent.style.display = ' none';
   scoreContainer.style.display = 'block';
   scoreSpan.textContent = score;
-  totalQuestionSpan.textContent = questions.length;
+  totalScoreSpan.textContent = questions.length;
 }
 
 function restartQuiz() {
