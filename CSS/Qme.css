@@ -61,6 +61,10 @@ a{
     color: #ffff;
 }
 
+nav a{
+    color: #005F69;
+}
+
 nav ul{
     flex-direction: column;
 }
